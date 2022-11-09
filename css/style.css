@@ -1,0 +1,461 @@
+/* light/dark mode */
+body.darkMode {
+  background-color: #141D2F;
+}
+body.darkMode header h2 {
+  color: #ffffff;
+}
+body.darkMode header label {
+  color: #ffffff;
+}
+body.darkMode header label:hover {
+  color: #b3b3b3;
+}
+body.darkMode nav {
+  background-color: #1E2A47;
+}
+body.darkMode nav input {
+  color: #ffffff;
+  background-color: transparent;
+}
+body.darkMode nav input::-moz-placeholder {
+  color: #ffffff;
+}
+body.darkMode nav input:-ms-input-placeholder {
+  color: #ffffff;
+}
+body.darkMode nav input::placeholder {
+  color: #ffffff;
+}
+body.darkMode main {
+  background-color: #1E2A47;
+}
+body.darkMode main .img div {
+  background-color: #FEFEFE;
+}
+body.darkMode main .title h1 {
+  color: #ffffff;
+}
+body.darkMode main .date {
+  color: #ffffff;
+}
+body.darkMode main .profil {
+  color: #ffffff;
+}
+body.darkMode main .box {
+  background-color: #141D2F;
+}
+body.darkMode main .box div {
+  color: #ffffff;
+}
+body.darkMode main .contact div, body.darkMode main .contact i {
+  color: #ffffff;
+}
+
+/* Core */
+.center {
+  display: flex;
+  align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #F6F8FF;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", monospace;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.main_box {
+  grid-area: 2/2/3/3;
+  display: grid;
+  grid-template-columns: 38vw;
+  grid-template-rows: 6.1vh 7.3vh 45vh;
+  grid-gap: 1vw;
+}
+
+/* Logo + darkmod */
+header {
+  grid-area: 1/1/2/2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h2 {
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+  font-size: 1.625rem;
+  line-height: 2.375rem;
+  color: #2B3442;
+}
+header label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Space Mono", monospace;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #0079FF;
+  color: #697C9A;
+  letter-spacing: 3px;
+}
+header label div {
+  margin: 0.5vw;
+}
+header label:hover {
+  color: #030304;
+}
+
+/* Barre de recherche */
+nav {
+  grid-area: 2/1/3/2;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  background-color: #FEFEFE;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav label {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+nav i {
+  color: #0079FF;
+  padding: 20px;
+  font-size: 2rem;
+}
+nav input {
+  border: none;
+  outline: none;
+  font-family: "Space Mono", monospace;
+  width: 14vw;
+  font-size: 1.1rem;
+  caret-color: #0079FF;
+}
+nav input:focus::-moz-placeholder {
+  -moz-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  color: transparent;
+}
+nav input:focus:-ms-input-placeholder {
+  -ms-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  color: transparent;
+}
+nav input:focus::placeholder {
+  transition: 0.5s ease-in;
+  color: transparent;
+}
+nav .error {
+  color: #F74646;
+  font-size: 0.875rem;
+  font-weight: bold;
+  padding: 15px;
+  visibility: hidden;
+}
+nav button {
+  border: none;
+  background-color: #0079FF;
+  height: 5.3vh;
+  width: 5.5vw;
+  border-radius: 10px;
+  font-family: "Space Mono", monospace;
+  color: #FEFEFE;
+  font-size: 1.081rem;
+  cursor: pointer;
+}
+nav button:hover {
+  background-color: #66afff;
+}
+
+/* Main Page */
+main {
+  grid-area: 3/1/4/2;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  background-color: #FEFEFE;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 10vw 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  padding: 2vw 1.5vw 1.5vw 0;
+}
+
+.img {
+  grid-area: 1/1/3/2;
+  justify-content: center;
+}
+.img img {
+  border-radius: 50%;
+  width: 6vw;
+  height: 6vw;
+}
+
+.title {
+  grid-area: 1/2/2/3;
+}
+.title h1 {
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+  font-size: 1.625rem;
+  line-height: 2.375rem;
+  color: #2B3442;
+}
+.title h3 {
+  font-family: "Space Mono", monospace;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #0079FF;
+}
+
+.date {
+  grid-area: 1/3/2/4;
+  display: flex;
+  justify-content: end;
+  font-family: "Space Mono", monospace;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #0079FF;
+  color: #697C9A;
+}
+
+.profil {
+  grid-area: 2/2/3/4;
+  font-family: "Space Mono", monospace;
+  font-weight: normal;
+  font-size: 0.938rem;
+  line-height: 1.563rem;
+  color: #2B3442;
+  color: #4B6A9B;
+}
+
+.box {
+  grid-area: 3/2/4/4;
+  background-color: #F6F8FF;
+  border-radius: 0.5vw;
+}
+.box > div {
+  margin: 0 3vw 0 1.5vw;
+}
+.box .statTitle {
+  font-family: "Space Mono", monospace;
+  font-weight: normal;
+  font-size: 0.813rem;
+  line-height: 1.25rem;
+  color: #4B6A9B;
+}
+.box .stat {
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+  font-size: 1.375rem;
+  line-height: 2rem;
+  color: #2B3442;
+}
+
+.contact {
+  grid-area: 4/2/5/4;
+  margin-top: 1vw;
+}
+.contact .contactText {
+  font-family: "Space Mono", monospace;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #0079FF;
+  color: #4B6A9B;
+}
+.contact .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100%;
+}
+.contact .contactLogo {
+  color: #4B6A9B;
+  font-size: 1.188rem;
+  margin-right: 20px;
+}
+.contact .contactMono {
+  margin-bottom: 0.5vw;
+}
+.contact .blog, .contact .twitter, .contact .company {
+  text-decoration: none;
+}
+.contact .blog:hover, .contact .twitter:hover, .contact .company:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 780px) and (min-width: 425px) {
+  .main_box {
+    grid-template-columns: 75vw;
+    grid-template-rows: 5vh 8vh 50vh;
+    grid-gap: 3vw;
+  }
+
+  nav i {
+    padding: 1vw 1vw;
+  }
+  nav input {
+    font-size: 0.8rem;
+    width: 29vw;
+  }
+  nav button {
+    height: 6.5vh;
+    width: 15vw;
+  }
+  nav .error {
+    font-size: 0.7em;
+    width: 10vw;
+    padding: 0;
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 7vw 1fr 1fr 1fr;
+    padding: 5vw;
+  }
+
+  .img {
+    grid-area: 1/1/3/2;
+    align-items: start;
+    justify-content: start;
+  }
+  .img img {
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .title {
+    grid-area: 1/2/2/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  .date {
+    grid-area: 2/2/3/4;
+    justify-content: start;
+    font-size: 0.9rem;
+  }
+
+  .profil {
+    grid-area: 3/1/4/4;
+  }
+
+  .box {
+    grid-area: 4/1/5/4;
+  }
+  .box > div {
+    margin: 0 10vw 0 3vw;
+  }
+
+  .contact {
+    grid-area: 5/1/6/4;
+    margin-top: 1vw;
+  }
+  .contact .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100%;
+  }
+  .contact .contactPar2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  body {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2vh 1fr;
+  }
+
+  .main_box {
+    grid-area: 2/2/3/3;
+    grid-template-columns: 90vw;
+    grid-template-rows: 5vh 6vh 66vh;
+    grid-gap: 5vw;
+  }
+
+  nav i {
+    padding: 1vw 1vw;
+    font-size: 1.6rem;
+  }
+  nav input {
+    font-size: 0.75rem;
+    width: 40vw;
+  }
+  nav label {
+    padding-right: 0;
+  }
+  nav button {
+    height: 5vh;
+    width: 20vw;
+    font-size: 0.8rem;
+    margin-right: 2vw;
+  }
+  nav .error {
+    text-align: justify;
+    width: 5vw;
+  }
+
+  main {
+    grid-template-columns: 25vw 1fr;
+    grid-template-rows: 7vh 7vh 15vh 12vh 1fr;
+    padding: 5vw;
+  }
+
+  .img {
+    grid-area: 1/1/3/2;
+  }
+  .img img {
+    width: 20vw;
+    height: 20vw;
+  }
+
+  .title {
+    grid-area: 1/2/2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  .date {
+    grid-area: 2/2/3/3;
+    justify-content: start;
+  }
+
+  .profil {
+    grid-area: 3/1/4/3;
+  }
+
+  .box {
+    grid-area: 4/1/5/3;
+    border-radius: 20px;
+  }
+  .box > div {
+    margin: 0 8vw 0 3vw;
+  }
+
+  .contact {
+    grid-area: 5/1/6/3;
+    padding: 3vw;
+  }
+
+  .grid {
+    display: flex !important;
+    flex-direction: column;
+  }
+}

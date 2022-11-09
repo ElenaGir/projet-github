@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/ico" href="assets/media/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b636e708af.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Appli de recherche de profil github   ">
+    <title>Devfinder</title>
+</head>
+<body id="body" class="lightMode">
+    <div class="main_box">
+        <header>
+            <h2>devfinder</h2>
+            <label class="btnTheme">
+                <span class="mode">DARK</span>
+                <i class="meteo fas fa-moon"></i>
+            </label>
+        </header>
+
+        <nav>
+            <label>
+                <i class="fas fa-search"></i>
+                <input class="searchBar" type="text" placeholder="Search GitHub username...">
+            </label>
+            <label>
+                <span class="error">No results</span>
+                <button type="submit" class="btnSearch">Search</button>
+            </label>
+        </nav>
+
+        <main>
+            <div class="img center">
+                <img class="avatar" src="https://avatars.githubusercontent.com/u/583231?v=4" alt="logo du profil github">
+            </div>
+            <div class="title">
+                <h1 class="name"></h1>
+                <h3 class="login"></h3>
+            </div>
+            <div class="date"></div>
+            <div class="profil"></div>
+            <div class="box center">
+                <div>
+                    <div class="statTitle">Repos</div>
+                    <div class="stat repos"></div>
+                </div>
+                <div>
+                    <div class="statTitle">Followers</div>
+                    <div class="stat followers"></div>
+                </div>
+                <div>
+                    <div class="statTitle">Following</div>
+                    <div class="stat following"></div>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="grid">
+                    <div class="contactPar2">
+                        <div class="contactMono center">
+                            <i class="contactLogo fas fa-map-marker-alt"></i>
+                            <div class="contactText location"></div>
+                        </div>
+                        <div class="contactMono center">
+                            <i class="contactLogo fas fa-link"></i>
+                            <a target="_blank" href="#" class="contactText blog"></a>
+                        </div>
+                    </div>
+                    <div class="contactPar2">
+                        <div class="contactMono center">
+                            <i class="contactLogo fab fa-twitter"></i>
+                            <a target="_blank" href="#" class="contactText twitter"></a>
+                        </div>
+                        <div class="contactMono center">
+                            <i class="contactLogo fas fa-building"></i>
+                            <a target="_blank" href="#" class="contactText company"></a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
